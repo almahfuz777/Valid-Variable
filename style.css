@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-color: yellow;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: green;
+    transition: .4s ease;
+}
+/* ------------- navbar ----------------- */
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 6rem;
+    font-size: 1.3rem;
+    align-items: center;  
+    background-color: olive;  
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1.5rem;
+    margin-right: 2rem;
+}
+
+/* ---------- section ----------- */
+.section{
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.section h1{
+    color: sienna;
+}
+.section ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.section ul li{    
+    text-align: center;
+}
+.section ul li a{
+    background-color: sandybrown;
+    border-radius: 5px;
+    display: inline-block;
+    width: 120px;
+    padding: 5px;
+    font-size: 1.3rem;
+}
+.section ul li a:hover{
+    background-color: teal;
+    color: black;
+}
+#selected{
+    background-color: yellowgreen;
+}
+
+.textbox{
+    width: 800px;
+    padding: 8px;
+    text-align: center;
+    margin: 5px;
+    background-color: gainsboro;
+    border: .5px solid;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+#submit{
+    margin: 1rem 0;
+    padding: 5px 8px;
+    background-color: yellowgreen;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: sandybrown;
+    transition: .3s ease;
+}
+#result{
+    /* color: white; */
+    color: green;
+    font-weight: bold;
+    /* background-color: green; */
+}
+
+/* ---------- footer ------------  */
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    background-color: olive;
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+.footer a{
+    color: whitesmoke;
+}
