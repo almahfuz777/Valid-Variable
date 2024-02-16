@@ -9,25 +9,25 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Resources</a></li>    
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Resources</a></li>    
+            <li><a href="#naming_convensions">Naming Convensions</a></li>
+            <li><a href="#rules">Rules</a></li>
+            <li><a href="#references">References</a></li>    
+            <li><a href="#contribute">Contribute</a></li>    
         </ul>
     </nav>
     <div class="section">
         <h1>Variable Validator</h1>
         <ul>
-            <li><a id="selected" href="#">C</a></li>
-            <li><a href="#">C++</a></li>
-            <li><a href="#">Java</a></li>
-            <li><a href="#">Python</a></li>
-            <li><a href="#">JavaScript</a></li>
+            <li><a id="selected" href="#C">C</a></li>
+            <li><a href="#C++">C++</a></li>
+            <li><a href="#Java">Java</a></li>
+            <li><a href="#Python">Python</a></li>
+            <li><a href="#JavaScript">JavaScript</a></li>
         </ul>
         <h2>Enter Variable Name:</h2>
-        <input class="textbox" type="text" name="" id="" placeholder="variUnable"><br>
-        <button id="submit">Check</button><br>
-        <p id="result">Result</p>
+        <input id="textbox" type="text" onkeydown="if(event.keyCode === 13) varChecker()" placeholder="variUnable"><br>
+        <button id="submit" onclick="varChecker()">Check</button><br>
+        <p id="result"></p>
     </div>
     <div class="footer">
         <p>&copy; 2024 Al Mahfuz</p>
@@ -37,5 +37,7 @@
             <a href="https://www.linkedin.com/in/almahfuz7/">LinkedIn</a>
         </p>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
